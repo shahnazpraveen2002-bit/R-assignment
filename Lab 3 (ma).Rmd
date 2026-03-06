@@ -1,0 +1,39 @@
+A=c(1,2)
+A
+P=matrix(A, nrow=1, ncol=2)
+P
+B=c(1,2,-2,-1)
+B
+Q=matrix(B, nrow=2, ncol=2)
+Q
+Mean_vector=c(4,3,2,1)
+Mean_vector
+R=matrix(A1, nrow=1, ncol=4)
+R
+Cov_x=(c(3,0,2,2,0,1,1,0,2,1,9,-2,2,0,-2,4))
+Cov_x
+S=matrix(A2, nrow=4, ncol=4)
+S
+E_X1=Mean_vector[1:2]
+E_X1
+E_X2=Mean_vector[3:4]
+E_X2
+E_AX1=t(A)%*%E_X1
+E_AX1
+E_BX2=Q%*%E_X2
+E_BX2
+Cov_X1=S[1:2,1:2]
+Cov_X1
+Cov_X2=S[3:4,3:4]
+Cov_X2
+Cov_X1X2=S[1:2,3:4]
+Cov_X1X2
+Cov_AX1=P%*%Cov_X1%*%t(P)
+Cov_AX1
+Cov_BX2=Q%*%Cov_X2%*%t(Q)
+Cov_BX2
+Cov_AX1BX2=P%*%Cov_X1X2%*%Q
+Cov_AX1BX2
+
+
+
